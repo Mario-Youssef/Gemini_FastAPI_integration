@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini User Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Welcome to Gemini Portal</h1>
+        <p>Your gateway to seamless API interaction</p>
+    </header>
+    <main>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#gemini">Gemini API</a></li>
+            </ul>
+        </nav>
+
+        <!-- User Registration Section -->
+        <section id="register" class="form-section">
+            <h2>Create an Account</h2>
+            <form id="register-form">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" required />
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" required />
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="register-message"></p>
+        </section>
+
+        <!-- User Login Section -->
+        <section id="login" class="form-section">
+            <h2>Access Your Account</h2>
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required />
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required />
+                <button type="submit">Log In</button>
+            </form>
+            <p id="login-message"></p>
+        </section>
+
+        <!-- Gemini API Section -->
+        <section id="gemini" class="form-section">
+            <h2>Use the Gemini API</h2>
+            <label for="gemini-text">Enter your request:</label>
+            <textarea id="gemini-text" rows="4" required></textarea>
+            <button id="gemini-request">Send Request</button>
+            <p id="gemini-response"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Gemini API Portal. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
